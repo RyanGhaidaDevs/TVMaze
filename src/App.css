@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #efefef;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
+  align-items: left;
+  justify-content: top;
+  font-size: 14pt;
+  color: grey;
+
+}
+
+.App-body {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  background-color: white;
+
+}
+
+.App-footer {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer-item {
+  background-color: white;
+  margin: 5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Search-Suggestions{
+  width: 60vw;
+  background-color: white;
+  max-height: 100px;
+  overflow-y: auto;
+  text-align: left;
 }
+
+.Search-section{
+  margin-left: 3%;
+}
+
+.Search-Bar-Div{
+  width: 60vw;
+  text-align: right;
+}
+
+.Orange-Text {
+  color: #FF3900;
+}
+
+#Search-Bar{
+  padding: 5px;
+  font-size: 14pt;
+}
+
+#Contact-Us{
+position: absolute;
+margin-left: 3%;
+}
+
+
+#Clear-Button{
+  color: #FF3900;
+  width: 90px;
+  font-size: 14pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #FF3900;
+}
+
+.Show-Seasons{
+  width: 7.5vw;
+  background-color: white;
+  max-height: 125px;
+  overflow-y: auto;
+  border-style: ridge;
+  border-width: thin;
+  margin-top: 5px;
+}
+
+.Show-Rating-Cell{
+  text-align: right;
+  
+}
+
+.Lato{
+  font-family: "Lato Bold"
+}
+
+#Show-Details{
+  width: 60vw;
+}
+
+#Episode-Details{
+  color: black; 
+  border-style: ridge;
+  
+  
+  margin-left: 25%; 
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Episode-Title{
+  font-size: 18pt;
+  font-style: bold;
+  font-family: "Lato Bold"
+}
+
+#Episode-Img{
+border-radius: 50%;
+height: 10vh;
+width: 5vw;
+display: inline;
+vertical-align: top;
+margin-right: 10px;
+padding: 10px;
+}
+
+#Episode-Summary{
+  display: inline;
+  vertical-align: top;
+  position: right;
+  font-size: 13pt;
+}
+
+#TV-Logo{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+
+input {
+  width: 60vw;
+}
+
+.timeline-container{
+  position: relative;
+}
+
+.timeline {
+  max-width: 90vw;
+  overflow-x: auto;
+  padding: 20px 0;
+  margin-left: 10%;
+  margin-top: 5%;
+  position: bottom;
+
+}
+
+.timeline ol {
+  width: 100%;
+  transition: all 1s;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: space-between;
+}
+
+.timeline ol li {
+  list-style:none;
+  position: relative;
+  text-align:center;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0 5px;
+}
+
+.timeline ol li:before {
+  content:"";
+  width:10px;
+  height:10px;
+  display:block;
+  border-radius:50%;
+  background: #FF3900;
+  margin:0 auto 5px auto;
+}
+.timeline ol li:not(:last-child)::after {
+    content: "";
+    width: calc(100% - 14px);
+    height: 2px;
+    display: block;
+    background: #ccc;
+    margin: 0;
+    position: absolute;
+    top: 4px;
+    left: calc(50% + 7px);
+}
+
+
